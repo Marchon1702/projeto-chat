@@ -6,7 +6,7 @@ let vez = 0
 function mudaVez() {
     if (vez === 0) {      
         vez = 1
-    } else if (vez === 1) {       
+    } else {       
         vez = 0
     }   
 }
@@ -20,7 +20,7 @@ function timeMessage() {
     if(vez === 0) {        
         mensagemHome.appendChild(espacoHora)
         espacoHora.innerHTML = `Hoje ${horas}:${minutos}`
-    } else if (vez === 1) {
+    } else {
         mensagemOut.appendChild(espacoHora)
         espacoHora.innerHTML = `Hoje ${horas}:${minutos}`
     }
@@ -37,7 +37,7 @@ function gerarHTML() {
         mensagemHome.classList.add('home-msg')
         baseHome.appendChild(mensagemHome)
         mensagemHome.innerHTML = inputMensagem.value
-    } else if (vez === 1) {
+    } else {
         baseOut = document.createElement('section')
         geralChat.appendChild(baseOut)
         baseOut.setAttribute('class', 'messages-Out')
