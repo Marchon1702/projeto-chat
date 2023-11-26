@@ -51,13 +51,8 @@ function gerarHTML() {
 
 function sendMessage() {
     if(inputMensagem.value === '') return
-    if(vez === 0) {
-        gerarHTML()  
-        timeMessage()    
-    } else if (vez === 1) {
-        gerarHTML()
-        timeMessage()
-    }
+    gerarHTML()
+    timeMessage()
     inputMensagem.value = ''
     inputMensagem.focus()
     mudaVez()
