@@ -71,5 +71,3 @@ inputMensagem.addEventListener('keypress', function(e) {
         sendMessage()
     }
 })
-
-console.log(vez)

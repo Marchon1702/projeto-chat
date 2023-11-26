@@ -9,13 +9,16 @@
 }
 
 body {
+    display: block;
+    margin: auto;
      background-color: rgb(26, 17, 34);
+     max-width: 800px;
 }
 
 header {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 section.user-area {
@@ -70,7 +73,7 @@ img {
 section.geral-chat {
     height: 75vh;
     overflow-y: scroll;
-    width: 100%;
+    overflow-x: hidden;
 }
 
 section.geral-chat::-webkit-scrollbar {
@@ -85,7 +88,6 @@ section.geral-chat::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 20px;
     width: 100%;
 }
 
@@ -94,12 +96,10 @@ section.geral-chat::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: end;
     width: 100%;
-    transform: translateX(-20px);
 }
 
 .home-msg {
-    width: 100%;
-    width: 40%;    
+    max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #790079;
@@ -109,8 +109,7 @@ section.geral-chat::-webkit-scrollbar-thumb {
 }
 
 .out-msg {
-    width: 100%;
-    width: 40%;
+    max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #279964;
