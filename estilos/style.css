@@ -53,21 +53,9 @@ img {
     cursor: pointer;
 }
 
-.waring {
+main {
+    display: block;
     margin: auto;
-    width: 60%;
-    background-color: #313131;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.currently-day {
-    margin: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: rgb(168, 168, 168);
 }
 
 section.geral-chat {
@@ -92,6 +80,23 @@ section.geral-chat::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
+.waring {
+    margin: auto;
+    width: 60%;
+    background-color: #313131;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.currently-day {
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+
 .messages {
     display: flex;
     flex-direction: column;
@@ -106,24 +111,31 @@ section.geral-chat::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.home-msg {
-    max-width: 100%;
+.style-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #790079;
     padding: 10px;
     border-radius: 0px 10px 10px 10px;
+}
+
+.style-text {   
+    text-wrap: wrap;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
 }
 
-.out-msg {
-    max-width: 100%;
+.style-out {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #279964;
     padding: 10px;
     border-radius: 10px 0px 10px 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
 }
 
 .time-msg {

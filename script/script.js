@@ -1,14 +1,11 @@
 const geralChat = document.querySelector('.geral-chat')
 let baseHome, baseOut
+let boxHome, boxOut 
 let mensagemHome, mensagemOut
 let vez = 0
 
 function mudaVez() {
-    if (vez === 0) {      
-        vez = 1
-    } else {       
-        vez = 0
-    }   
+    vez = vez === 0 ? vez = 1 : vez = 0
 }
 
 function timeMessage() {
@@ -33,17 +30,23 @@ function gerarHTML() {
         baseHome = document.createElement('section')
         geralChat.appendChild(baseHome)
         baseHome.setAttribute('class', 'messages')       
+        boxHome = document.createElement('div')
+        baseHome.appendChild(boxHome)
+        boxHome.setAttribute('class', 'style-home')
         mensagemHome = document.createElement('p')
-        mensagemHome.classList.add('home-msg')
-        baseHome.appendChild(mensagemHome)
+        mensagemHome.classList.add('style-text')
+        boxHome.appendChild(mensagemHome)
         mensagemHome.innerHTML = inputMensagem.value
     } else {
         baseOut = document.createElement('section')
         geralChat.appendChild(baseOut)
         baseOut.setAttribute('class', 'messages-Out')
+        boxOut = document.createElement('div')
+        baseOut.appendChild(boxOut)
+        boxOut.setAttribute('class', 'style-out')
         mensagemOut = document.createElement('p')
-        mensagemOut.classList.add('out-msg')
-        baseOut.appendChild(mensagemOut)
+        mensagemOut.classList.add('style-text')
+        boxOut.appendChild(mensagemOut)
         mensagemOut.innerHTML = inputMensagem.value
     }
     
